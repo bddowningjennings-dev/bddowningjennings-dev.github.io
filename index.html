@@ -9,6 +9,7 @@
     <title>Pokemans</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
     <script
 			  src="https://code.jquery.com/jquery-3.2.1.js"
 			  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -16,18 +17,34 @@
     <script>
       $(document).ready(function() {
         for (var i = 1; i < 719; i ++) {
-          console.log('<img src="http://pokeapi.co/media/img/' + i + '.png>');
-          $('.wrapper').append('<img src="http://pokeapi.co/media/img/' + i + '.png">');
+          $('section').append('<img id="' + i + '" src="http://pokeapi.co/media/img/' + i + '.png">');
         }
-      })
+          $('img').click(function() {
+            var id = $(this).attr('id');
+            $.getJSON("http://pokeapi.co/api/v1/pokemon/" + id, function(data) {
+              $('aside').html("");
+              $('aside').append('<img src="http://pokeapi.co/media/img/' + id + '.png">');
+              $('aside').append('<p>Name: ' + data.name + '</p>');
+              var types = data.types[0].name;
+              for (var i = 1; i < data.types.length; i ++) {
+                  types += ", " + data.types[i].name;
+                }
+                $('aside').append('<p>Types: ' + types + '</p>');
+              console.log(types);
+              console.log(data);
+              })
+              // $('aside').append('<p>' + id + '</p>>');
+            });
+          })
     </script>
   </head>
   <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div style="background-color:mediumaquamarine" class="wrapper">
-
+    <div class="wrapper">
+      <section></section>
+      <aside></aside>
     </div>
   </body>
 </html>

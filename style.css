@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  background-color:mediumaquamarine;
+}
+
+aside {
+ display: inline-block;
+ vertical-align: top;
+ width: 270px;
+ height: 500px;
+ background-color: white;
+}
+
+section {
+  display: inline-block;
+  width: 970px;
+}
+aside img {
+  display: block;
+  margin-left: 70px;
+}
+p {
+  width: 100%;
+  text-align: center;
+}
