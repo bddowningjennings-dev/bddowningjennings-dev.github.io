@@ -1,28 +1,77 @@
 * {
-  margin: 0;
-  padding: 0;
+  /* outline: 1px dashed red; */
 }
-.wrapper {
-  background-color:mediumaquamarine;
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: #ebadb1;
+}
+main {
+}
+header {
+  background-color: #ee6e73;
+  display: flex;
+}
+header h2 {
+  color: rgba(255, 255, 255, 1);
+  margin: 5px auto;
+}
+@media only screen and (max-width: 600px) {
+  #resume {
+    visibility: hidden;
+  }
 }
 
-aside {
- display: inline-block;
- vertical-align: top;
- width: 270px;
- height: 500px;
- background-color: white;
+@media only screen and (min-width: 600px) {
+  #resume {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 90%;
+  }
 }
 
-section {
-  display: inline-block;
-  width: 970px;
+@media only screen and (min-width: 1200px) {
+  #resume {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    width: 1200px;
+    height: 1800px;
+  }
 }
-aside img {
-  display: block;
-  margin-left: 70px;
+
+#resume .header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;  
 }
-p {
-  width: 100%;
-  text-align: center;
+#resume .header h3 {
+  margin: 10px auto;
 }
+#resume div.row {
+  display: flex;
+  width: 45%;
+  margin: -10px auto;
+}
+#resume div.row p {
+  flex-grow: 1;
+  text-align: center; 
+}
+
+
+#resume .experience {
+  height: 40px;
+}
+#resume .education {
+  height: 40px;
+}
+#resume .references {
+  height: 40px;
+}
+#resume .footer {
+  height: 40px;
+}
+.hoverable:hover {
+  transition: box-shadow .25s;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
