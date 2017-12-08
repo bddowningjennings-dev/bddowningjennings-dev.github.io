@@ -75,3 +75,13 @@ header h2 {
 .hoverable:hover {
   transition: box-shadow .25s;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.hand {
+  border-radius: 200px;
+  width: 200px;
+  height: 200px;
+  transform: rotate(90deg)
+}
+.hand:hover {
+  transform: rotate(45deg)  
+}
