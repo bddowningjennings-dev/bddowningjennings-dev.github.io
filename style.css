@@ -234,6 +234,9 @@ span.spacer {
   background-color: white;
 }
 
+.portraits_label {
+  z-index: 1;
+}
 .portraits:hover + .portrait_label {
   z-index: 4;
 }
@@ -286,9 +289,6 @@ span.spacer {
     height: 80px;
     width: 285px;
     overflow-wrap: normal;
-  }
-  header {
-    z-index: 2;
   }
   #portrait:hover {
     border: none;
