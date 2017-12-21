@@ -235,7 +235,7 @@ span.spacer {
 }
 
 #welcome:hover {
-  z-index: 1;
+  z-index: 0;
 }
 .portraits:hover + .portrait_label {
   z-index: 4;
