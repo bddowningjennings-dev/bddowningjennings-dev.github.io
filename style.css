@@ -1,0 +1,319 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url('assets/OpenSans-Regular.ttf');
+}
+
+@import url('assets/fontawesome-all.min.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  /* outline: 1px dashed blue; */
+}
+html, body {
+  height: 100%;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Karla', sans-serif;
+
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background: #EDEBED;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px; /* make sure to change the wrapper padding */
+  position: fixed;
+  z-index: 2;
+  background-color: rgb(228, 98, 98);
+  border-radius: 2px;
+  box-shadow: 0 4px 15px rgba(68, 68, 68, 0.6);
+  /* box-shadow: 0 8px 17px 0, opacity(0 8px 16px 0); */
+}
+main, footer {
+  text-align: center;
+}
+footer {
+  width: 100%;
+  /* background-color: rgb(51, 184, 184); */
+  /* background-color: rgb(46, 162, 162); */
+  /* background-color: rgb(80, 171, 207); */
+  background-color: rgb(36, 146, 182);
+  box-shadow: 4px 0 15px rgba(68, 68, 68, 0.6);  
+}
+.wrapper {
+  /* background-color: rgb(233, 225, 212); */
+  /* background-color: rgb(214, 230, 227); */
+  background-color: rgb(251, 252, 243);
+  padding-top: 50px;
+  flex: 1 0 auto;
+}
+nav, .left_header {
+  width: 380px;
+  display: flex;
+  justify-content: space-between;
+}
+nav {
+  padding-right: 10px;
+}
+header > h2, nav > a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  padding: 0 10px;
+  color: white;
+}
+header > h2 {
+  word-break: keep-all;
+}
+nav > a {
+  padding: 20px;
+}
+nav > a:hover {
+  background-color: rgb(214, 85, 85);
+}
+#resume {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  width: 1200px;
+  height: 1800px;
+  border-radius: 4px;
+  color: black;
+}
+.hoverable:hover {
+  transition: box-shadow .25s;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#resume.hidden {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+}
+
+.anchor {
+  display: block;
+  height: 60px; /*same height as header*/
+  margin-top: -60px; /*same height as header*/
+  visibility: hidden;
+}
+#welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rgb(161, 146, 146); */
+  /* background-color: rgb(171, 176, 185); */
+  /* background-color: rgb(118, 135, 167); */
+  background-color: rgb(79, 124, 176);
+  color: rgb(243, 204, 75);
+  font-size: 20px;
+  padding-bottom: 30px;
+  box-shadow: 0 4px 5px rgba(68, 68, 68, 0.2);  
+}
+#welcome > .portraits {
+  width: 100%;
+  height: 435px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url('assets/world.jpg');
+  background-position: 64% 68%;
+  box-shadow: 0 2px 5px rgba(68, 68, 68, 0.1);
+}
+#welcome > h3 > span {
+  color: white;
+}
+#welcome > h3 > span#phrase {
+  color: rgb(243, 204, 75);
+}
+#portrait {
+  border-radius: 400px;
+  border: 3px rgb(224, 224, 201) solid;
+  /* border: 8px rgb(118, 135, 167) solid; */
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 20px auto;
+  box-shadow: 0 4px 5px rgba(68, 68, 68, 0.4);
+}
+.social_label > img, .portrait_label > img {
+  width: 30px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;  
+  transform: rotate(200deg)
+}
+.social_label > img {
+  transform: rotate(-10deg)
+}
+.portrait_label > h1, .social_label > h3 {
+  display: inline-block;
+  margin: 15px 0;
+}
+.portrait_label {
+  /* text-shadow: 0.5px 0 #443333; */
+}
+#about_me {
+  font-size: 20px;
+  height: 100%;
+}
+#projects {
+margin-bottom: 30px;  
+}
+.social_links {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+.spacer {
+  height: 10px;
+  width: 100px;
+}
+#here {
+  border-radius: 13px;
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+  margin: 0 10px;
+  overflow: hidden;
+}
+span.spacer {
+  display: inline-block;
+  width: 12px;
+  height: 25px;
+  background-color: rgb(201, 154, 93);
+  vertical-align: middle;
+  margin-left: -5px;
+  margin-top: -5px;
+}
+
+.underline {
+  width: 90%;
+  border-bottom: 0.5px solid silver;
+  opacity: 0.6;
+  margin: 15px auto;
+  box-shadow:0.5px 0.5px 0.5px silver;
+}
+.card {
+  margin: 15px auto;  
+  width: 90%;
+  padding: 40px 20px;
+  padding-top: 10px;
+  box-shadow: 0 4px 5px rgba(68, 68, 68, 0.2);
+  /* background-color: white; */
+  background-color: #f2ece8;
+  border-radius: 8px;
+}
+.gato {
+  width: 30%;
+
+}
+
+.card > h1 {
+  font-size: 40px;
+  color: rgb(66, 113, 214);
+  margin: 15px auto;
+}
+#projects_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#projects_container > .card {
+  width: 25%;
+  height: 200px;
+  background-color: white;
+}
+
+
+@media screen and (max-width: 1400px) {
+  .left_header {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    margin: 0;
+  }
+  header {
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .wrapper {
+    padding-top: 110px;
+  }
+  header > h2 {
+    width: 350px;
+  }
+  #resume {
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden;
+    margin: 0;
+  }
+  #projects_container > .card {
+    width: 40%;
+  }
+}
+
+.portraits:hover + .portrait_label {
+  z-index: 4;
+}
+#portrait:hover {
+  z-index: 2;
+  width: 650px;
+  height: 650px;
+  border: none;
+}
+
+@media screen and (max-width: 760px) {
+  header > h2 {
+    width: 0;
+    visibility: hidden;
+  }
+  nav {
+    width: 100%;
+  }
+  #welcome > h3 {
+    height: 80px;
+    width: 285px;
+    overflow-wrap: normal;
+  }
+  #portrait:hover {
+    z-index: 2;
+    border: none;
+    margin: 0;
+    border-radius: 0;
+    width: 97%;
+    height: 700px;
+  }
+  #projects_container > .card {
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  nav {
+    flex-direction: column;
+  }
+  nav > a {
+    margin: 0 auto;
+    padding: 0 90px;
+  }
+  nav > a:last-of-type {
+    padding-bottom: 5px;
+  }
+  .card {
+    width: 88%;
+    padding: 20px 15px;
+    padding-top: 10px;
+  }
+
+}
