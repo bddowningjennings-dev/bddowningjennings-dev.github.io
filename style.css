@@ -234,7 +234,7 @@ span.spacer {
   background-color: white;
 }
 
-.portraits_label {
+#welcome:hover {
   z-index: 1;
 }
 .portraits:hover + .portrait_label {
