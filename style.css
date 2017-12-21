@@ -265,7 +265,7 @@ span.spacer {
   }
 }
 
-.portrait:hover + .portrait_label {
+.portrait_wrapper:hover + .portrait_label {
   z-index: 4;
 }
 #portrait:hover {
@@ -288,7 +288,7 @@ span.spacer {
     width: 285px;
     overflow-wrap: normal;
   }
-  .portrait:hover + .portrait_label {
+  .portraits_wrapper:hover + .portrait_label {
     z-index: 4;
   }
   #portrait:hover {
