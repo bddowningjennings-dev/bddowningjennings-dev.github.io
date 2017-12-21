@@ -5,6 +5,7 @@ let btn_gato = document.getElementById('btn_gato');
 let resume = document.getElementById('resume');
 let main = document.getElementById('main');
 let phrase = document.getElementById('phrase');
+let spacer = document.getElementById('spacer');
 let gatos = [];
 
 add.onclick = () => {
@@ -27,10 +28,8 @@ btn_gato.onclick = (event) => {
 btn_resume.onclick = () => {
   if (resume.className.split(' ').includes('hidden')) {
     resume.classList.remove('hidden');
-    console.log(resume.classList)
   } else {
     resume.classList.add('hidden');
-    console.log(resume.classList)
   }
 }
 
@@ -52,6 +51,11 @@ const phraseFactory  = () => {
       letter_count ++;
     } else if (counter < 10) {
       counter ++;
+      if (spacer.className.split(' ').includes('flash')) {
+        spacer.classList.remove('flash');
+      } else {
+        spacer.classList.add('flash');
+      }
     } else {
       counter = 0;
       letter_count = 0;

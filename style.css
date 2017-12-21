@@ -176,6 +176,9 @@ margin-bottom: 30px;
   height: 10px;
   width: 100px;
 }
+.flash {
+  visibility: hidden;
+}
 #here {
   border-radius: 13px;
   width: 60px;
