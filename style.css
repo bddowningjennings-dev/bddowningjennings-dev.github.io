@@ -231,7 +231,7 @@ span.spacer {
 }
 
 
-.portraits:hover + .portrait_label {
+/* .portraits:hover + .portrait_label {
   z-index: 4;
 }
 #portrait:hover {
@@ -239,7 +239,7 @@ span.spacer {
   width: 650px;
   height: 650px;
   border: none;
-}
+} */
 
 @media screen and (max-width: 1400px) {
   .left_header {
@@ -284,13 +284,13 @@ span.spacer {
     width: 285px;
     overflow-wrap: normal;
   }
-  #portrait:hover {
+  /* #portrait:hover {
     border: none;
     margin: 0;
     border-radius: 0;
     width: 97%;
     height: 700px;
-  }
+  } */
   #projects_container > .card {
     width: 80%;
   }
@@ -314,18 +314,6 @@ span.spacer {
   }
 }
 
-@media (hover:none), (hover:on-demand) {
-  #portrait:hover {
-    border: 3px rgb(224, 224, 201) solid;
-    /* border: 8px rgb(118, 135, 167) solid; */
-    width: 250px;
-    height: 250px;
-    z-index: 1;
-  }
-  .portraits:hover + .portrait_label {
-    z-index: 1;
-  }
-}
 #portrait_label.hover_label {
   z-index: 4;
 }
