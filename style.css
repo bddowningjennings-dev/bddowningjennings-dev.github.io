@@ -234,9 +234,7 @@ span.spacer {
   background-color: white;
 }
 
-main:hover {
-  z-index: -5;
-}
+
 .portraits:hover + .portrait_label {
   z-index: 4;
 }
@@ -320,4 +318,8 @@ main:hover {
     padding-top: 10px;
   }
 
+}
+
+main:hover {
+  z-index: -5;
 }
