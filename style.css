@@ -321,5 +321,5 @@ span.spacer {
 }
 
 main:hover {
-  z-index: 1;
+  z-index: -5;
 }
