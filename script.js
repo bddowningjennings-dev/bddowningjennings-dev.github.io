@@ -109,8 +109,8 @@ let hoverNonPortrait = () => {
   portrait_label.classList.remove('hover_label');
   main.setAttribute('style', 'z-index: 0');
 }
-// let delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
+// let delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 // delay(70000).then(console.log('hi'));
 
 let phrasePlace = phraseFactory();

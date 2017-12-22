@@ -207,7 +207,6 @@ span.spacer {
   padding: 40px 20px;
   padding-top: 10px;
   box-shadow: 0 4px 5px rgba(68, 68, 68, 0.2);
-  /* background-color: white; */
   background-color: #f2ece8;
   border-radius: 8px;
 }
@@ -312,6 +311,19 @@ span.spacer {
     width: 88%;
     padding: 20px 15px;
     padding-top: 10px;
+  }
+}
+
+@media (hover:none), (hover:on-demand) {
+  #portrait:hover {
+    border: 3px rgb(224, 224, 201) solid;
+    /* border: 8px rgb(118, 135, 167) solid; */
+    width: 250px;
+    height: 250px;
+    z-index: 1;
+  }
+  .portraits:hover + .portrait_label {
+    z-index: 1;
   }
 }
 #portrait_label.hover_label {
