@@ -99,6 +99,7 @@ let hoverPortrait = () => {
     portrait.classList.remove('hover_portrait');
     portrait_label.classList.remove('hover_label');
   } else {
+    main.setAttribute('style', 'z-index: 3');    
     portrait.classList.add('hover_portrait');
     portrait_label.classList.add('hover_label');
   }
@@ -106,6 +107,7 @@ let hoverPortrait = () => {
 let hoverNonPortrait = () => {
   portrait.classList.remove('hover_portrait');
   portrait_label.classList.remove('hover_label');
+  main.setAttribute('style', 'z-index: 0');
 }
 // let delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
