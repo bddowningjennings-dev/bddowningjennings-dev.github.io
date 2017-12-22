@@ -10,7 +10,7 @@
   <title>Blane Downing-Jennings</title>
 
 </head>
-<body>
+<body onclick="hoverNonPortrait(event)">
   <header>
     <div class="left_header"></div>
     <h2>
@@ -28,11 +28,11 @@
     <main id='main'>
       <section id='welcome'>
         <div class="portraits">
-            <img id='portrait' src="assets/me.jpg" alt="" srcset="">
+            <img id='portrait' src="assets/me.jpg" alt="" srcset="" onclick="(function() {event.stopPropagation();})(); hoverPortrait()">
         </div>
-        <div class="portrait_label">
+        <div id="portrait_label" class="portrait_label">
           <img src="assets/red_arrow.svg" alt="" srcset="">
-          <h1>Hi, that's my faacce!</h1>
+          <h1>Hi, that's my face!</h1>
         </div>
         <h3>
           <span>I'm a <em>solution</em> developer </span> <br>

@@ -157,9 +157,6 @@ nav > a:hover {
   display: inline-block;
   margin: 15px 0;
 }
-.portrait_label {
-  /* text-shadow: 0.5px 0 #443333; */
-}
 #about_me {
   font-size: 20px;
   height: 100%;
@@ -317,9 +314,13 @@ span.spacer {
     padding: 20px 15px;
     padding-top: 10px;
   }
-
 }
-
-main:hover {
-  z-index: -5;
+#portrait_label.hover_label {
+  z-index: 4;
+}
+#portrait.hover_portrait {
+  z-index: 3;
+  width: 650px;
+  height: 650px;
+  border: none;
 }

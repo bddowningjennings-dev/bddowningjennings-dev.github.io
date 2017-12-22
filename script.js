@@ -1,4 +1,5 @@
 "use strict";
+
 console.log('connected');
 let add = document.getElementById('add');
 let btn_resume = document.getElementById('btn_resume');
@@ -7,6 +8,9 @@ let resume = document.getElementById('resume');
 let main = document.getElementById('main');
 let phrase = document.getElementById('phrase');
 let spacer = document.getElementById('spacer');
+let portrait = document.getElementById('portrait');
+let portrait_label = document.getElementById('portrait_label');
+
 let gatos = [];
 
 add.onclick = () => {
@@ -90,6 +94,19 @@ const phraseFactory  = () => {
   }
 };
 
+let hoverPortrait = () => {
+  if (portrait.className.split(' ').includes('hover_portrait')) {
+    portrait.classList.remove('hover_portrait');
+    portrait_label.classList.remove('hover_label');
+  } else {
+    portrait.classList.add('hover_portrait');
+    portrait_label.classList.add('hover_label');
+  }
+}
+let hoverNonPortrait = () => {
+  portrait.classList.remove('hover_portrait');
+  portrait_label.classList.remove('hover_label');
+}
 // let delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 // delay(70000).then(console.log('hi'));
