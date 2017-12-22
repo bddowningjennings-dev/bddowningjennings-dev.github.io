@@ -1,3 +1,4 @@
+"use strict";
 console.log('connected');
 let add = document.getElementById('add');
 let btn_resume = document.getElementById('btn_resume');
