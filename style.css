@@ -47,7 +47,8 @@ footer {
 .wrapper {
   /* background-color: rgb(233, 225, 212); */
   /* background-color: rgb(214, 230, 227); */
-  background-color: rgb(251, 252, 243);
+  /* background-color: rgb(251, 252, 243); */
+  background-color: rgb(224, 228, 237);
   padding-top: 50px;
   flex: 1 0 auto;
 }
@@ -221,6 +222,7 @@ span.spacer {
   margin: 15px auto;
 }
 #projects_container {
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -239,6 +241,21 @@ span.spacer {
   height: 650px;
   border: none;
 } */
+
+.content {
+  padding: 20px;
+  /* background-color: rgb(218, 203, 203); */
+  /* background-color: rgb(235, 165, 165); */
+  background-color: rgb(237, 225, 225);;
+  background-color: 
+  box-shadow: 0 1px 1px rgba(68, 68, 68, 0.2);
+  opacity: 0.77;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: -20px;
+  word-wrap: break-word;
+}
+
 @media screen and (min-width: 1400px) {
   .portraits:hover + .portrait_label {
     z-index: 4;
@@ -289,6 +306,9 @@ span.spacer {
   #projects_container > .card {
     width: 40%;
   }
+  .content {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -322,6 +342,13 @@ span.spacer {
   }
   #projects_container > .card {
     width: 80%;
+  }
+  .card {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .content {
+    width: 98%;
   }
 }
 
