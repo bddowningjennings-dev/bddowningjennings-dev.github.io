@@ -195,6 +195,7 @@ span.spacer {
 
 .underline {
   width: 90%;
+  height: 2px;
   border-bottom: 0.5px solid silver;
   opacity: 0.6;
   margin: 15px auto;
