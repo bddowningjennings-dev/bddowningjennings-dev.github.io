@@ -19,9 +19,9 @@
       Blane Downing-Jennings: Stuff and Things
     </h2>
     <nav>
-      <a href="#anchor_about_me">About</a>
-      <a id="btn_resume" href="#anchor_resume">Resume</a>
-      <a href="#anchor_projects">Projects</a>
+      <a href="#anchor_about_me" onclick="(function() {event.preventDefault(); document.getElementById('anchor_about_me').scrollIntoView(true)})();">About</a>
+      <a href="#anchor_resume" onclick="(function() {event.preventDefault(); document.getElementById('anchor_resume').scrollIntoView(true)})(); clickResume();">Resume</a>
+      <a href="#anchor_projects" onclick="(function() {event.preventDefault(); document.getElementById('anchor_projects').scrollIntoView(true)})();">Projects</a>
       <a href="#anchor_contact" id="btn_gato">+ Gato</a>
     </nav>
   </header>

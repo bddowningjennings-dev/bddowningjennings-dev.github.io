@@ -30,7 +30,7 @@ btn_gato.onclick = (event) => {
   event.preventDefault();
 }
 
-btn_resume.onclick = () => {
+let clickResume = () => {
   if (resume.className.split(' ').includes('hidden')) {
     resume.classList.remove('hidden');
   } else {
