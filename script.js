@@ -2,8 +2,6 @@
 
 console.log('connected');
 let add = document.getElementById('add');
-let btn_resume = document.getElementById('btn_resume');
-let btn_gato = document.getElementById('btn_gato');
 let resume = document.getElementById('resume');
 let main = document.getElementById('main');
 let phrase = document.getElementById('phrase');
@@ -21,13 +19,11 @@ add.onclick = () => {
     console.log('All gatos gato removed already...');
   }
 }
-btn_gato.onclick = (event) => {
+let clickGato = () => {
   let blah = document.createElement("div");
   blah.innerHTML = '<img class="gato" src="assets/gato.jpg" />';
   gatos.push(blah);
   main.appendChild(blah);  
-  window.scrollTo(main.getBoundingClientRect().bottom);
-  event.preventDefault();
 }
 
 let clickResume = () => {
