@@ -126,6 +126,7 @@ nav > a:hover {
 }
 #welcome > h3 > span {
   color: white;
+  line-height: 35px;  
 }
 #welcome > h3 > span#phrase {
   color: rgb(243, 204, 75);
@@ -316,7 +317,6 @@ span.spacer {
     height: 95px;
     width: 285px;
     overflow-wrap: normal;
-    line-height: 35px;
   }
   /* #portrait:hover {
     border: none;
