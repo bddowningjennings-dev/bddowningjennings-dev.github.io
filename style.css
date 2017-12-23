@@ -316,6 +316,7 @@ span.spacer {
     height: 95px;
     width: 285px;
     overflow-wrap: normal;
+    line-height: 35px;
   }
   /* #portrait:hover {
     border: none;
