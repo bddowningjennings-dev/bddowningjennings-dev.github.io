@@ -23,7 +23,7 @@ let clickGato = () => {
   let blah = document.createElement("div");
   blah.innerHTML = '<img class="gato" src="assets/gato.jpg" />';
   gatos.push(blah);
-  main.appendChild(blah);  
+  main.appendChild(blah);
 }
 
 let clickResume = () => {
