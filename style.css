@@ -17,7 +17,6 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  background-color: yellow;
 }
 header {
   display: flex;
