@@ -12,14 +12,12 @@
 }
 html, body {
   height: 100%;
-  /* font-family: 'Open Sans', sans-serif; */
   font-family: 'Karla', sans-serif;
-
 }
 body {
   display: flex;
   flex-direction: column;
-  background: #EDEBED;
+  background-color: yellow;
 }
 header {
   display: flex;
@@ -31,16 +29,12 @@ header {
   border-radius: 2px;
   box-shadow: 0 4px 15px rgba(68, 68, 68, 0.6);
   z-index: 2;
-  /* box-shadow: 0 8px 17px 0, opacity(0 8px 16px 0); */
 }
 main, footer {
   text-align: center;
 }
 footer {
   width: 100%;
-  /* background-color: rgb(51, 184, 184); */
-  /* background-color: rgb(46, 162, 162); */
-  /* background-color: rgb(80, 171, 207); */
   background-color: rgb(36, 146, 182);
   box-shadow: 4px 0 15px rgba(68, 68, 68, 0.6);  
 }
@@ -105,14 +99,11 @@ nav > a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: rgb(161, 146, 146); */
-  /* background-color: rgb(171, 176, 185); */
-  /* background-color: rgb(118, 135, 167); */
   background-color: rgb(79, 124, 176);
   color: rgb(243, 204, 75);
   font-size: 20px;
   padding-bottom: 30px;
-  box-shadow: 0 4px 5px rgba(68, 68, 68, 0.2);  
+  box-shadow: 0 4px 5px rgba(68, 68, 68, 0.2);
 }
 #welcome > .portraits {
   width: 100%;
@@ -304,6 +295,17 @@ span.spacer {
   .content {
     width: 85%;
   }
+  #header_nav.shrink {
+    /* display: none; */
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: display 0.2s, height 0.3s, visibility 0.2s, opacity 0.3s linear;
+  }
+  .wrapper.shrink {
+    padding-top: 0;
+    /* transition: padding-top 0.2s linear; */
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -314,19 +316,14 @@ span.spacer {
   nav {
     width: 100%;
   }
+  #welcome > .portraits {
+    height: 400px;
+  }
   #welcome > h3 {
     height: 95px;
     width: 285px;
     overflow-wrap: normal;
   }
-  /* #portrait:hover {
-    border: none;
-    margin: 0;
-    border-radius: 0;
-    width: 97%;
-    height: 700px;
-  } */
-
   #portrait.hover_portrait {
     border: none;
     margin: 0;

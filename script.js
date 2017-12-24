@@ -1,6 +1,8 @@
 "use strict";
 
 console.log('connected');
+let header_nav = document.getElementById('header_nav');
+let wrapper = document.getElementById('wrapper');
 let add = document.getElementById('add');
 let resume = document.getElementById('resume');
 let main = document.getElementById('main');
@@ -112,3 +114,15 @@ let hoverNonPortrait = () => {
 let phrasePlace = phraseFactory();
 phrasePlace.shufflePhrases(7);
 phrasePlace.getPhrases();
+
+let lastPosition = 0;
+window.onscroll = () => {
+  if (window.scrollY - lastPosition > 0) {
+    header_nav.classList.add('shrink');
+    wrapper.classList.add('shrink');
+  } else if (window.scrollY - lastPosition < 0) {
+    header_nav.classList.remove('shrink');
+    wrapper.classList.remove('shrink');
+  }
+  lastPosition = window.scrollY;
+}
