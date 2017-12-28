@@ -77,8 +77,8 @@ nav > a:hover {
   display: flex;
   flex-direction: column;
   margin: 30px auto;
-  width: 1200px;
-  height: 1800px;
+  width: 850px;
+  height: 1100px;
   border-radius: 4px;
   color: black;
 }
@@ -152,7 +152,7 @@ nav > a:hover {
   display: inline-block;
   margin: 15px 0;
 }
-#about_me {
+#about_me, #resume_section {
   font-size: 20px;
   height: 100%;
 }
@@ -245,6 +245,39 @@ span.spacer {
   margin: 0 auto;
   margin-bottom: -20px;
   word-wrap: break-word;
+}
+#about_me p {
+  font-size: 0.9em;
+}
+#resume_pdf {
+  width: 100%;
+}
+div.btn {
+  display: flex;
+  margin: auto;
+  border-radius: 5px;
+  justify-content: space-around;
+  align-items: center;
+  /* width: 110px; */
+  height: 35px;
+  background-color: #f2ece8;
+}
+div.btn > a {
+  display: block;
+  width: 100%;
+  padding: 5px 20px;
+}
+#resume_section a {
+  text-decoration: none;
+}
+div.btn:hover {
+  background-color: #e6dad2;
+}
+#download {
+  margin: auto;
+  display: flex;
+  width: 450px;
+  align-items: center;
 }
 
 @media screen and (min-width: 1400px) {
@@ -343,6 +376,11 @@ span.spacer {
   .content {
     width: 98%;
   }
+  #download {
+    flex-direction: column;
+    width: 98%;
+  }
+  
 }
 
 @media screen and (max-width: 420px) {
@@ -362,3 +400,4 @@ span.spacer {
     padding-top: 10px;
   }
 }
+
