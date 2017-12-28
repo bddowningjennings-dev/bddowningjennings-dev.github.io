@@ -246,7 +246,7 @@ span.spacer {
   margin-bottom: -20px;
   word-wrap: break-word;
 }
-#about_me p {
+#about_me p, , #about_me p {
   font-size: 0.9em;
 }
 #resume_pdf {
