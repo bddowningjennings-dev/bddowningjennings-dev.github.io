@@ -3,7 +3,7 @@
 console.log('connected');
 let header_nav = document.getElementById('header_nav');
 let wrapper = document.getElementById('wrapper');
-let add = document.getElementById('add');
+let btn_degato = document.getElementById('btn_remove_gato');
 let resume = document.getElementById('resume');
 let main = document.getElementById('main');
 let phrase = document.getElementById('phrase');
@@ -11,14 +11,24 @@ let spacer = document.getElementById('spacer');
 let portrait = document.getElementById('portrait');
 let portrait_label = document.getElementById('portrait_label');
 
+// project buttons
+
+let worx = document.getElementById('worx')
+let ysfs = document.getElementById('ysfs')
+
+worx.onclick = () => window.open('https://github.com/bddowningjennings-dev/worx_-valley_hackathon-', '_blank')
+ysfs.onclick = () => window.open('https://github.com/bddowningjennings-dev/yourstuff4sale', '_blank')
+
+
+
 let gatos = [];
 
-add.onclick = () => {
+btn_degato.onclick = () => {
   if (gatos.length > 0) {
     let blah = gatos.pop();
     main.removeChild(blah);
   } else {
-    console.log('All gatos gato removed already...');
+    alert('All gatos gato removed already...');
   }
 }
 let clickGato = () => {

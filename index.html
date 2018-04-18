@@ -22,7 +22,7 @@
     <nav>
       <a href="#anchor_about_me" onclick="(function() {event.preventDefault(); document.getElementById('anchor_about_me').scrollIntoView(true)})();">About</a>
       <a href="#anchor_resume" onclick="(function() {event.preventDefault(); document.getElementById('anchor_resume').scrollIntoView(true)})(); clickResume();">Resume</a>
-      <!-- <a href="#anchor_projects" onclick="(function() {event.preventDefault(); document.getElementById('anchor_projects').scrollIntoView(true)})();">Projects</a> -->
+      <a href="#anchor_projects" onclick="(function() {event.preventDefault(); document.getElementById('anchor_projects').scrollIntoView(true)})();">Projects</a>
       <a href="#anchor_contact" onclick="(function() {event.preventDefault();})(); clickGato(); (function() {document.getElementById('anchor_contact').scrollIntoView(true);})();">+ Gato</a>
     </nav>
   </header>
@@ -85,37 +85,39 @@
 
 
 
-<!-- 
+
       <span class="anchor" id="anchor_projects"></span>
       <section id='projects' class="card">
           <div class="underline"></div>
-          <h1>Projects</h1>
+          <h1>Sample Projects</h1>
           <div class="card content">
 
               <p></p>  
           </div>
         <div id="projects_container">
-          <div class="card hoverable">
+          <div id="worx" class="project card hoverable">
+            W O R X
               <div class="underline"></div>
-
+              <img src="assets/worx.jpg" width="100%" alt="" srcset="">              
           </div>
-          <div class="card hoverable">
+          <div id="ysfs" class="project card hoverable">
+            Your Stuff 4 Sale
               <div class="underline"></div>
-
+              <img src="assets/ysfs.png" width="100%" alt="" srcset="">               
           </div>
-          <div class="card hoverable">
+          <!-- <div class="card hoverable">
               <div class="underline"></div>
-          </div>
+          </div> -->
         </div>
       </section>
   
     </main>
-  </div> -->
+  </div>
   <span class="" id="anchor_contact"></span>  
   <footer>
     <br>
     <h3>Remove a picture of a cat?</h3><br>
-    <button id="add">Yes, please!!</button>
+    <button id="btn_remove_gato">Yes, please!!</button>
     <div class="social_label">
         <!-- <img src="assets/red_arrow.svg" alt="" srcset="">   -->
         <!-- <h3>Here are some of my profiles...</h3> -->

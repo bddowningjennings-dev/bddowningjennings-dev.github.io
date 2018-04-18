@@ -206,6 +206,10 @@ span.spacer {
   background-color: #f2ece8;
   border-radius: 8px;
 }
+.project, #btn_remove_gato {
+  cursor: pointer;
+  /* padding-bottom: 100px; */
+}
 .gato {
   width: 30%;
 
@@ -222,8 +226,8 @@ span.spacer {
   flex-wrap: wrap;
 }
 #projects_container > .card {
-  width: 25%;
-  height: 200px;
+  width: 35%;
+  /* height: 200px; */
   background-color: white;
 }
 
@@ -401,3 +405,7 @@ div.btn:hover {
   }
 }
 
+#btn_remove_gato {
+  border: none;
+  padding: 10px 20px;
+}
