@@ -46,7 +46,7 @@ let clickResume = () => {
   }
 }
 
-const phraseFactory  = () => {
+const phraseFactory = () => {
   let tidbits = [
     'and I\'m currently available for hire...',
     'and I enjoy food...',
